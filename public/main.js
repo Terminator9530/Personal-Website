@@ -6,11 +6,16 @@
              scrollTop: $($.attr($("#scroll a")[0], 'href')).offset().top
          }, 600);
      });
+     $(".flex-container a").on('click', function () {
+        $('html,body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 600);
+    });
  });
 
  //----------------------------------------TypeWriter----------------------------------//
 
- var txt = ["Hello Everyone", "This is Vaibhav Shukla's Personal Website", "Hope you will enjoy my Website", "Scroll down to explore further"],
+ var txt = ["Hello Everyone", "This is Vaibhav Shukla's Personal Website", "Hope you will enjoy my Website!!", "Scroll down to explore further"],
      count = 0,
      i = 0,
      timer;

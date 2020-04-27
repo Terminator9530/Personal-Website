@@ -78,3 +78,33 @@ footer {
     z-index: 2;
     background-color: rgb(49, 49, 49);
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 3;
+    right: 50px;
+    font-family: 'Comic Neue', cursive;
+    color: white;
+}
+
+.flex-container>a {
+    background-color: rgb(49, 49, 49);
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 10px;
+}
+
+.flex-container>a:hover {
+    color: white;
+}
+
+.flex-container>a:visited {
+    color: white;
+}
+
+.flex-container>a:active {
+    color: white;
+}
