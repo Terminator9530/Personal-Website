@@ -1,0 +1,80 @@
+header {
+    width: 1519px;
+    height: 754px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+body {
+    margin: 0;
+}
+
+#headerImg {
+    width: 1519px;
+    height: 754px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+#name {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 7rem;
+    display: inline-block;
+    margin: 10px;
+}
+
+#typewriter {
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+#scroll {
+    width: 120px;
+    height: 90px;
+    background-color: rgb(49, 49, 49);
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+#info {
+    width: 1519px;
+    height: 754px;
+    position: relative;
+    z-index: 2;
+    background-color: chocolate;
+}
+
+#skills {
+    width: 1519px;
+    height: 754px;
+    position: relative;
+    z-index: 2;
+    background-color: cornflowerblue;
+}
+
+footer {
+    width: 1519px;
+    height: 500px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(49, 49, 49);
+}
