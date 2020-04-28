@@ -7,10 +7,10 @@
          }, 600);
      });
      $(".flex-container a").on('click', function () {
-        $('html,body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 600);
-    });
+         $('html,body').animate({
+             scrollTop: $($.attr(this, 'href')).offset().top
+         }, 600);
+     });
  });
 
  //----------------------------------------TypeWriter----------------------------------//
@@ -41,3 +41,30 @@
  window.onload = function () {
      welcome();
  }
+
+
+ //---------------------------sticky navbar---------------------------------//
+ window.onscroll = function () {
+     myFunction()
+ };
+
+ var header = document.getElementsByClassName("flex-container")[0];
+ var sticky = header.offsetTop;
+
+ function myFunction() {
+     if (window.pageYOffset > sticky-40) {
+         header.classList.add("sticky");
+     } else {
+         header.classList.remove("sticky");
+     }
+ }
+
+ document.getElementsByClassName("flex-container")[0].addEventListener("click",function(e){
+     console.log("e");
+     document.querySelectorAll(".flex-container a").forEach(ele=>{
+        if(e.path[0].outerText==ele.innerHTML)
+        ele.style.background="rgb(171, 14, 243)";
+        else
+        ele.style.background="rgb(39, 38, 38)";
+     });
+ });
