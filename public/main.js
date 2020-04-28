@@ -50,6 +50,9 @@
 
  var header = document.getElementsByClassName("flex-container")[0];
  var sticky = header.offsetTop;
+ var info=document.getElementById("info");
+ var skill=document.getElementById("skills");
+ var contact=document.getElementById("contact");
 
  function myFunction() {
      if (window.pageYOffset > sticky-40) {
@@ -57,6 +60,27 @@
      } else {
          header.classList.remove("sticky");
      }
+     if(window.pageYOffset<=10)
+     {
+        document.querySelectorAll(".flex-container a")[0].style.background="rgb(39, 38, 38)";
+        document.querySelectorAll(".flex-container a")[1].style.background="rgb(39, 38, 38)";
+        document.querySelectorAll(".flex-container a")[2].style.background="rgb(39, 38, 38)";
+     }
+     if (window.pageYOffset > info.offsetTop-window.pageYOffset/4) {
+        document.querySelectorAll(".flex-container a")[0].style.background="rgb(171, 14, 243)";
+        document.querySelectorAll(".flex-container a")[1].style.background="rgb(39, 38, 38)";
+        document.querySelectorAll(".flex-container a")[2].style.background="rgb(39, 38, 38)";
+    }
+    if (window.pageYOffset > skill.offsetTop-window.pageYOffset/4) {
+        document.querySelectorAll(".flex-container a")[1].style.background="rgb(171, 14, 243)";
+        document.querySelectorAll(".flex-container a")[0].style.background="rgb(39, 38, 38)";
+        document.querySelectorAll(".flex-container a")[2].style.background="rgb(39, 38, 38)";
+    }
+    if (window.pageYOffset > contact.offsetTop-window.pageYOffset/4) {
+        document.querySelectorAll(".flex-container a")[2].style.background="rgb(171, 14, 243)";
+        document.querySelectorAll(".flex-container a")[0].style.background="rgb(39, 38, 38)";
+        document.querySelectorAll(".flex-container a")[1].style.background="rgb(39, 38, 38)";
+    }
  }
 
  document.getElementsByClassName("flex-container")[0].addEventListener("click",function(e){
