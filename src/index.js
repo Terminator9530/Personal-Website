@@ -13,6 +13,9 @@ var skills=[
   {title:"PHP",star:[1,1,1,1,0]},
   {title:"Flutter",star:[1,1,1,1,0]},
   {title:"Unity 3D",star:[1,1,1,1,0]},
+  {title:"Python",star:[1,1,1,1,0]},
+  {title:"CSS",star:[1,1,1,1,0]},
+  {title:"MySQL",star:[1,1,1,1,0]},
 ];
 
 ReactDOM.render(<App skills={skills} />,
