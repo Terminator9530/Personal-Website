@@ -57,7 +57,7 @@ body {
 
 #info {
     width: 100%;
-    height: 700px;
+    height: 754px;
     position: relative;
     z-index: 2;
     background-color:white;
@@ -216,7 +216,7 @@ i{
     #languageSkills{
         margin: 10px 5%!important;
     }
-    #skills p{
+    hr+p{
         margin: 10px 5%!important;
     }
     #info div{
@@ -224,5 +224,29 @@ i{
     }
     .flex-container{
         display: none;
+    }
+    .social{
+        width:50%;
+    }
+    #scroll{
+        display: none;
+    }
+    #name{
+        font-size: 4rem!important;
+    }
+    #typewriter{
+        font-size: 2rem!important;
+    }
+}
+
+@media screen and (max-width:870px){
+    #info div{
+        margin: 10px 2px!important;
+    }
+    #info p{
+        margin:0 10px!important;
+    }
+    hr{
+        width: 100%!important;
     }
 }
