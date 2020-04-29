@@ -57,10 +57,10 @@ body {
 
 #info {
     width: 1519px;
-    height: 754px;
+    height: 700px;
     position: relative;
     z-index: 2;
-    background-color: chocolate;
+    background-color:white;
 }
 
 #skills {
