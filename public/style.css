@@ -250,3 +250,16 @@ i{
         width: 100%!important;
     }
 }
+
+@media screen and (max-width:400px){
+    .social{
+        width:80%;
+    }
+    .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #info{
+        height:900px;
+    }
+}
