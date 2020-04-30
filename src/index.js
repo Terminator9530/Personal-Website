@@ -6,7 +6,7 @@ import Language from './components/Language';
 var codingSkills=[
   {title:"React JS",star:[1,1,1,0,0]},
   {title:"Node JS",star:[1,1,1,0,0]},
-  {title:"MongoDB",star:[1,1,1,1,0]},
+  {title:"MongoDB",star:[1,1,1,0,0]},
   {title:"Bootstrap",star:[1,1,1,1,1]},
   {title:"Materialize CSS",star:[1,1,1,1,0]},
   {title:"HTML",star:[1,1,1,1,1]},
@@ -17,7 +17,12 @@ var codingSkills=[
   {title:"Python",star:[1,1,1,1,0]},
   {title:"CSS",star:[1,1,1,1,1]},
   {title:"MySQL",star:[1,1,1,1,1]},
-  {title:"Jquery",star:[1,1,1,1,0]}
+  {title:"Jquery",star:[1,1,1,1,0]},
+  {title:"Wordpress",star:[1,1,0,0,0]},
+  {title:"GitHub",star:[1,1,1,1,1]},
+  {title:"Python",star:[1,1,1,0,0]},
+  {title:"C Programming",star:[1,1,1,1,0]},
+  {title:"Electron JS",star:[1,1,0,0,0]}
 ];
 
 var languageSkills=[

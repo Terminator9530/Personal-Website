@@ -65,7 +65,7 @@ body {
 
 #skills {
     width: 100%;
-    height: 754px;
+    height: 850px;
     position: relative;
     z-index: 2;
     background-color: rgb(243, 239, 239);
@@ -261,5 +261,8 @@ i{
     }
     #info{
         height:900px;
+    }
+    #skills{
+        height:1300px;
     }
 }
