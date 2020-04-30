@@ -99,12 +99,14 @@ var flag=0;
             document.querySelector(".flex-container").style.display="flex";
             document.querySelector(".flex-container").style.opacity="0";
             document.querySelector(".flex-container").style.animation="visible 0.5s forwards linear reverse";
+            document.getElementById("menu").innerHTML='<i class="fa fa-times" style="font-size: 50px;color: white;"></i>';
             flag=1;
          }
          else{
             document.querySelector(".flex-container").style.opacity="1";
             document.querySelector(".flex-container").style.animation="visible 2s forwards linear";
             document.querySelector(".flex-container").style.display="none";
+            document.getElementById("menu").innerHTML='<i class="fa fa-align-justify" style="font-size: 50px;color: white;"></i>';
             flag=0;
          }
       });
