@@ -88,7 +88,7 @@
      document.querySelectorAll(".flex-container a").forEach(ele=>{
         if(e.path[0].outerText==ele.innerHTML)
         ele.style.background="rgb(171, 14, 243)";
-        else
+        else if(e.path[0].localName=="a")
         ele.style.background="rgb(39, 38, 38)";
      });
  });
