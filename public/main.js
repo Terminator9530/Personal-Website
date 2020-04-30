@@ -106,7 +106,7 @@ var flag=0;
             document.querySelector(".flex-container").style.opacity="1";
             document.querySelector(".flex-container").style.animation="visible 2s forwards linear";
             document.querySelector(".flex-container").style.display="none";
-            document.getElementById("menu").innerHTML='<i class="fa fa-align-justify" style="font-size: 50px;color: white;"></i>';
+            document.getElementById("menu").innerHTML='<i class="fa fa-align-justify" style="font-size: 50px;color: rgb(42, 49, 40);;"></i>';
             flag=0;
          }
       });
