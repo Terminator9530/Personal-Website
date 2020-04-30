@@ -40,7 +40,7 @@ body {
     background-color: rgb(39, 38, 38);
     position: absolute;
     bottom: 0px;
-    right: 50px;
+    right: 0px;
     font-size: 24px;
     cursor: pointer;
 }
@@ -84,7 +84,7 @@ footer {
     flex-direction: column;
     position: absolute;
     z-index: 3;
-    right: 50px;
+    right: 0px;
     top:754px;
     font-family: 'Comic Neue', cursive;
     color: white;
@@ -123,9 +123,8 @@ a:active{
 
 .sticky{
     position: fixed;
-    left:1350px;
     top:0px;
-    width: 100%;
+    right:0px;
     animation: slide 2s forwards;
 }
 @keyframes slide{
@@ -220,16 +219,10 @@ i{
         margin: 10px 5%!important;
     }
     #info div{
-        margin: 10px 2px!important;
-    }
-    .flex-container{
-        display: none;
+        margin: 10px 60px!important;
     }
     .social{
         width:50%;
-    }
-    #scroll{
-        display: none;
     }
     #name{
         font-size: 4rem!important;
@@ -241,13 +234,42 @@ i{
 
 @media screen and (max-width:870px){
     #info div{
-        margin: 10px 2px!important;
+        margin: 10px 60px!important;
     }
     #info p{
         margin:0 10px!important;
     }
     hr{
         width: 100%!important;
+    }
+    .flex-container{
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        left:0;
+        height:754px;
+        background-color: rgb(39, 39, 38);
+        justify-content: center;
+        align-items: center;
+        display:none;
+    }
+    .sticky{
+        animation:none;
+    }
+    .flex-container a{
+        padding: 20px 20px;
+        width: 60%;
+    }
+    #scroll{
+        display: none;
+    }
+    @keyframes visible {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
     }
 }
 

@@ -92,3 +92,19 @@
         ele.style.background="rgb(39, 38, 38)";
      });
  });
+
+var flag=0;
+     $( "#menu" ).click(function() {
+         if(!flag){
+            document.querySelector(".flex-container").style.display="flex";
+            document.querySelector(".flex-container").style.opacity="0";
+            document.querySelector(".flex-container").style.animation="visible 0.5s forwards linear reverse";
+            flag=1;
+         }
+         else{
+            document.querySelector(".flex-container").style.opacity="1";
+            document.querySelector(".flex-container").style.animation="visible 2s forwards linear";
+            document.querySelector(".flex-container").style.display="none";
+            flag=0;
+         }
+      });
