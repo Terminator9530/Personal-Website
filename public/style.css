@@ -256,6 +256,7 @@ i{
         justify-content: center;
         align-items: center;
         display:none;
+        height:100%;
     }
     .sticky{
         animation:none;
