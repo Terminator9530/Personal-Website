@@ -296,3 +296,32 @@ i{
         height:1300px;
     }
 }
+
+#content{
+    display: none;
+}
+
+.loader{
+    width:150px;
+    height: 150px;
+    border-radius:50%;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #fc0c0c;
+    border-bottom: 16px solid #3498db;
+    animation:spinner 2s linear infinite;
+    background-color: black;
+}
+
+#loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height:100%;
+    width:100%;
+}
+@keyframes spinner{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
