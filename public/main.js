@@ -1,7 +1,9 @@
-$(document).ready(function () {
+
+  $(window).bind("load", function() {
     document.getElementById("loading").style.display = "none";
     document.getElementById("content").style.display = "block";
-});
+    welcome();
+ });
 //----------------------------------Animate on scroll----------------------------------//
 
 $(function () {
@@ -42,9 +44,6 @@ function show() {
     document.getElementById("typewriter").innerHTML += txt[count].charAt(i);
     i++;
 }
-window.onload = function () {
-    welcome();
-}
 
 
 //---------------------------sticky navbar---------------------------------//
@@ -61,7 +60,9 @@ var contact = document.getElementById("contact");
 function myFunction() {
     if (window.pageYOffset > sticky - 40) {
         header.classList.add("sticky");
+        console.log("add",header.offsetTop,window.pageYOffset)
     } else {
+        console.log("remove",header.offsetTop,window.pageYOffset)
         header.classList.remove("sticky");
     }
     if (window.pageYOffset <= 10) {
